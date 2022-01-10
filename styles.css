@@ -9,14 +9,16 @@ html, body {
     padding: 0;
     
     
+    
 }
-body {
-    background-image: url("wallpaperflare.com_wallpaper.jpg");
+html {
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
     background-color: rgba(0, 0, 0, .3);
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
 }
+
 .nav ul {
     margin: 0;
 
@@ -32,14 +34,21 @@ body {
     
 }
 .main-nav {
-    text-align: center;
+    text-align: right;
     font-size: 6mm;
     font-weight: lighter;
     font-weight: 400;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 .main-nav li {
-    padding: 0 5%;
+    padding: 0 1%;
+}
+.title-nav {
+    font-size: 7mm;
+    font-weight: bold;
+    float:left;
+    
+    
 }
 .nav a:hover {
     background-color: rgba( 255, 255, 255, .3);
