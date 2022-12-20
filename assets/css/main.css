@@ -1,12 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
+/* prettier-ignore */
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -25,6 +20,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+/* prettier-ignore */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -88,7 +84,7 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: rgba(255, 255, 255, 0.774);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -107,12 +103,12 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: rgb(0, 0, 0);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #C76879;
 		line-height: 1.5em;
 	}
 
@@ -1757,12 +1753,13 @@ input, select, textarea {
 		.image.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background: #222729;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
 			}
 
 		.image.fit {
@@ -1948,7 +1945,7 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #e27689;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -1966,7 +1963,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #D46F80;
 		}
 
 		input[type="button"]:active,
@@ -1974,7 +1971,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7eaeac;
+			background-color: #C76879;
 		}
 
 /* Item */
@@ -2120,6 +2117,7 @@ input, select, textarea {
 
 		#logo .image {
 			position: absolute;
+			z-index: 100;
 			left: 0;
 			top: 0;
 		}
@@ -2128,6 +2126,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		margin-bottom: 0;
+		
 	}
 
 		#nav ul li {
@@ -2145,12 +2144,14 @@ input, select, textarea {
 				-webkit-transition: none;
 				-ms-transition: none;
 				transition: none;
+				
 			}
 
 				#nav ul li a span {
 					position: relative;
 					display: block;
 					font-size: 0.8em;
+					
 				}
 
 					#nav ul li a span:before {
@@ -2160,12 +2161,14 @@ input, select, textarea {
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
+						
 					}
 
 				#nav ul li a.active {
 					background: rgba(0, 0, 0, 0.15);
 					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 					color: #fff;
+					
 				}
 
 					#nav ul li a.active span:before {
@@ -2177,7 +2180,7 @@ input, select, textarea {
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: #26282c;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2245,23 +2248,62 @@ input, select, textarea {
 				background-size: cover;
 				background-position: center center;
 			}
+			
+			
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				
+				background-color: #2c2f33;
+				/* background-image: url("../../images/banner.png"); */
+				
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #33363B;
+				box-shadow: inset 10px 10px 10px 10px rgba(0, 0, 0, 0.1), inset 10px 10px 10px 10px rgba(0, 0, 0, 0.1),;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #2c2f33;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #33363B;
 			}
+
+			
+			#main .profile--img {
+				position: relative;
+				background-image: url("/images/banner.png");
+				width: 350px;
+				height: 430px;
+				border-radius: 20px;
+				display:block;
+				background-size: cover;
+				top: 0;
+				left: 0;
+				float:left;
+				/* padding: 50px; */
+				margin-left: 100px;
+				margin-right: 80px;
+				margin-top: 30px;
+				
+			}
+
+			#main h1 {
+				display: inline-block;
+				
+			}
+			#main h4 {
+				
+				text-align: left;
+				
+				/* display: inline-block; */
+			}
+			#main p {
+				/* display: inline-block; */
+			}
+			
 
 /* Wide */
 
