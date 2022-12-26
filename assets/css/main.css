@@ -2093,9 +2093,10 @@ input, select, textarea {
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		margin: 1.75em 1.5em 0em 1.5em;
 		min-height: 48px;
 		cursor: default;
+		padding-bottom: 40px;
 	}
 
 		#logo h1 {
@@ -2104,6 +2105,8 @@ input, select, textarea {
 			font-weight: 600;
 			font-size: 1em;
 			line-height: 1em;
+			top: 35px
+			
 		}
 
 		#logo p {
@@ -2113,6 +2116,9 @@ input, select, textarea {
 			color: rgba(255, 255, 255, 0.5);
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
+			top: 25px;
+			
+			
 		}
 
 		#logo .image {
@@ -2123,9 +2129,11 @@ input, select, textarea {
 		}
 
 	#nav ul {
+		position: relative;
 		list-style: none;
 		padding-left: 0;
 		margin-bottom: 0;
+		padding-top: 11px;
 		
 	}
 
@@ -2300,12 +2308,22 @@ input, select, textarea {
 				
 				/* display: inline-block; */
 			}
-			#main p {
-				/* display: inline-block; */
+			
+			#portfolio h3 {
+				text-align: left;
+				padding-bottom: 1cm;
+				padding-top: 1cm;
 			}
 			
 
-			
+			#portfolio .col img.responsive-img {
+				margin: 0 auto;
+				max-height: 100px;
+				padding-bottom: 10px;
+				text-align: center;
+				vertical-align: middle;
+				display: table-cell;
+			  }
 			.card {
 				margin-bottom: 60px;
 				
@@ -2767,6 +2785,10 @@ input, select, textarea {
 
 		/* Basic */
 
+			#logo h1 {
+				font-size: 15px;
+			}
+
 			body, input, textarea, select {
 				font-size: 14pt;
 			}
@@ -2775,6 +2797,14 @@ input, select, textarea {
 				font-size: 1.5em;
 				letter-spacing: 0;
 				font-weight: 300;
+			}
+
+			#main .profile--img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 0.5em;
+				
 			}
 
 			.container {
